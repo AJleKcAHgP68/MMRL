@@ -1,296 +1,322 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Setup -->
+    <!-- Настройки -->
     <string name="setup_mode">Режим работы</string>
-    <string name="setup_non_root_title">Без Root</string>
-    <string name="setup_non_root_desc">Не требует Root прав, доступна только функция загрузки модулей</string>
-    <!-- Install -->
+    <string name="setup_non_root_title">Без root</string>
+    <string name="setup_non_root_desc">Не требует разрешений root, доступна только функция загрузки модулей</string>
+    <string name="working_mode_magisk_title">Magisk</string>
+    <string name="working_mode_kernelsu_title">KernelSU</string>
+    <string name="working_mode_kernelsu_next_title">KernelSU Next</string>
+    <string name="working_mode_apatch_title">APatch</string>
+    <string name="working_mode_shizuku_title">Shizuku</string>
+    <string name="working_mode_apatch_desc">Модификация ядра Android и системы. Новая root-система на основе ядра с поддержкой модулей вроде Magisk и инъекции функций ядра (требует inline-hook и syscall-table-hook). Создана на основе KernelSU.</string>
+    <string name="working_mode_kernelsu_next_desc">Расширенная root-система на основе ядра с поддержкой Magic Mount, улучшенным контролем над приложениями и настраиваемыми привилегиями.</string>
+    <string name="working_mode_kernelsu_desc">Root-система на основе ядра с контролем над приложениями, настраиваемыми привилегиями и поддержкой модулей через OverlayFS.</string>
+    <string name="working_mode_magisk_desc">Набор инструментов для кастомизации Android с root-доступом, поддержкой модулей, модификацией загрузочных образов и выполнением кода на уровне процессов через Zygisk.</string>
+    <string name="working_mode_shizuku_desc">Решение на основе разрешений, позволяющее приложениям выполнять системные команды без полного root-доступа. Требует авторизации через Sui или Shizuku, обеспечивая ограниченные привилегии.</string>
+    <!-- Установка -->
     <string name="install_screen_title">Установка</string>
-    <string name="install_flashing">Прошивка</string>
+    <string name="install_flashing">Флешинг</string>
     <string name="install_done">Готово</string>
     <string name="install_failure">Ошибка</string>
-    <string name="install_logs_saved">Логи сохранены</string>
+    <string name="install_logs_saved">Журнал сохранён</string>
     <string name="install_logs_save_failed">Не удалось сохранить: %s</string>
     <string name="install_screen_reboot_title">Перезагрузка?</string>
     <string name="install_screen_reboot_text">Вы уверены, что хотите перезагрузить устройство?</string>
     <string name="install_screen_reboot_confirm">Подтвердить</string>
     <string name="install_screen_reboot_dismiss">Отмена</string>
-    <!-- License -->
-    <string name="license_title">Просмотреть лицензию</string>
-    <string name="license_osi_approved">Одобрено OSI</string>
-    <string name="license_fsf_libre">FSF Libre</string>
-    <!-- Page -->
-    <string name="page_repository">Репозиторий</string>
+    <!-- Лицензии -->
+    <string name="license_title">Просмотр лицензии</string>
+    <string name="license_osi_approved">Утверждена OSI</string>
+    <string name="license_fsf_libre">Свободная (FSF)</string>
+    <!-- Страницы -->
+    <string name="page_home">Главная</string>
+    <string name="page_repository">Репозитории</string>
     <string name="page_modules">Модули</string>
     <string name="page_settings">Настройки</string>
-    <!-- Repository -->
+    <!-- Репозитории -->
     <string name="repository_empty">Репозиторий пуст</string>
-    <string name="module_installed">Установлен</string>
-    <string name="module_new">Новый</string>
-    <!-- Advanced Menu -->
+    <string name="module_installed">Установлено</string>
+    <string name="module_new">Новая</string>
+    <!-- Расширенное меню -->
     <string name="menu_pin_installed">Закрепить установленные</string>
     <string name="menu_pin_updatable">Закрепить обновляемые</string>
     <string name="menu_show_icon">Показывать иконку</string>
     <string name="menu_show_license">Показывать лицензию</string>
     <string name="menu_show_cover">Показывать обложку</string>
-    <string name="menu_show_verified">Показывать проверку</string>
-    <string name="menu_sort_repolistmode_detailed">Подробный</string>
+    <string name="menu_show_verified">Показывать проверенные</string>
+    <string name="menu_sort_repolistmode_detailed">Детальный</string>
     <string name="menu_sort_repolistmode_compact">Компактный</string>
-    <!-- View Module -->
+    <!-- Информация о модуле -->
     <string name="view_module_version">Версия</string>
     <string name="view_module_last_updated">Последнее обновление</string>
     <string name="view_module_update_notify">Уведомлять</string>
     <string name="view_module_update_ignore">Игнорировать</string>
-    <string name="view_module_provided">Предоставлено %s</string>
-    <string name="view_module_version_dialog_desc">Вы хотите установить или скачать эту версию модуля?</string>
-    <string name="view_module_homepage">Домашняя страница</string>
+    <string name="view_module_provided">Предоставлено: %s</string>
+    <string name="view_module_version_dialog_desc">Установить или загрузить эту версию модуля?</string>
+    <string name="view_module_homepage">Официальный сайт</string>
     <string name="view_module_source">Исходный код</string>
     <string name="view_module_support">Поддержка</string>
-    <string name="view_module_view_track">Просмотр веток</string>
+    <string name="view_module_view_track">Просмотреть трек</string>
     <string name="view_module_type">Тип: %s</string>
     <string name="view_module_added">Добавлено: %s</string>
     <string name="view_module_file_size">Размер файла</string>
     <string name="view_module_antifeatures">Анти-функции</string>
-    <string name="view_module_unsupported">Не поддерживается</string>
-    <string name="view_module_unsupported_desc">Похоже, ваше устройство не поддерживает эту версию модуля. Устанавливайте на свой страх и риск!</string>
-    <!-- View Module / Features -->
+    <string name="view_module_unsupported">Неподдерживаемо</string>
+    <string name="view_module_unsupported_desc">Ваше устройство, вероятно, не поддерживает эту версию модуля. Установка на свой страх и риск!</string>
+    <string name="view_module_license">Лицензия</string>
+    <!-- Функции модуля -->
     <string name="view_module_features">Функции</string>
     <string name="view_module_features_service">Сервис</string>
     <string name="view_module_features_post_fs_data">Post FS Data</string>
     <string name="view_module_features_system_properties">Системные свойства</string>
     <string name="view_module_features_selinux_policy">Политика SELinux</string>
     <string name="view_module_features_zygisk">Zygisk</string>
-    <string name="view_module_features_apks">APK</string>
-    <string name="view_module_features_webui">WebUI</string>
+    <string name="view_module_features_apks">APK-файлы</string>
+    <string name="view_module_features_webui">Веб-интерфейс</string>
+    <string name="view_module_features_action">Действие</string>
     <string name="view_module_features_post_mount">Post Mount</string>
-    <string name="view_module_features_boot_completed">Загрузка завершена</string>
-    <string name="view_module_features_service_sub">Запускает код позже во время загрузки (после инициализации большей части системы).</string>
-    <string name="view_module_features_post_fs_data_sub">Запускает код вскоре после загрузки (частично загруженная система).</string>
-    <string name="view_module_features_resetprop_sub">Устанавливает системные свойства, загружаемые resetprop Magisk.</string>
-    <string name="view_module_features_sepolicy_sub">Добавляет пользовательские политики безопасности (правила SEPolicy).</string>
-    <string name="view_module_features_zygisk_sub">Позволяет модулям взаимодействовать с фреймворком Zygisk, включая изменения и взаимодействия с системой.</string>
-    <string name="view_module_features_apks_sub">Включает дополнительные APK внутри модуля.</string>
-    <string name="view_module_features_webui_sub">Веб-интерфейс для управления модулями с использованием технологий API JavaScript.</string>
-    <string name="view_module_features_postmount_sub">Выполнение скрипта после монтирования OverlayFS (KernelSU и APatch).</string>
-    <string name="view_module_features_bootcompleted_sub">Выполнение скрипта после завершения загрузки (KernelSU и APatch).</string>
-    <!-- Modules -->
-    <string name="modules_empty">Модули не найдены</string>
-    <!-- Module Item -->
-    <string name="module_version_author">%1$s от %2$s</string>
-    <string name="module_remove">Удалить</string>
-    <string name="module_restore">Восстановить</string>
-    <string name="module_install">Установить</string>
-    <string name="module_download">Скачать</string>
-    <string name="module_update">Обновить</string>
-    <!-- Settings -->
-    <string name="settings_app">Приложение</string>
-    <string name="settings_about">О приложении</string>
-    <string name="settings_resources">Ресурсы</string>
-    <string name="settings_resources_desc">Документация, поддерживаемые репозитории и прочее</string>
-    <string name="settings_security">Безопасность</string>
-    <string name="settings_security_desc">Настройки безопасности приложения</string>
-    <string name="settings_appearance">Внешний вид</string>
-    <string name="settings_appearance_desc">Измените приложение под свои потребности</string>
-    <string name="settings_other">Другое</string>
-    <string name="settings_other_desc">DoH, путь загрузки и другое</string>
-    <string name="settings_text_wrap">Перенос текста</string>
-    <string name="settings_text_wrap_desc">Включает перенос текста внутри терминала установки</string>
-    <string name="settings_changelog">Список изменений</string>
-    <string name="settings_changelo_desc">Все текущие изменения в MMRL</string>
-    <!-- Root Item -->
-    <string name="settings_root_access">Root доступ: %s</string>
-    <string name="settings_root_provider">Поставщик: %s</string>
-    <string name="settings_root_granted">Предоставлен</string>
-    <string name="settings_root_not_available">Недоступен</string>
-    <string name="settings_root_none">Нет</string>
-    <!-- Non Root Item -->
-    <string name="settings_non_root_desc">Функциональность ограничена</string>
-    <!-- App -->
-    <string name="settings_app_theme">Тема приложения</string>
-    <string name="settings_app_theme_desc">Изменить цветовую схему и ночной режим</string>
-    <string name="settings_download_path">Путь загрузки</string>
-    <string name="settings_delete_zip">Удалить Zip файл</string>
-    <string name="settings_delete_zip_desc">Удалить zip-архив модуля после успешной установки, это будет выполнено суперпользователем</string>
-    <string name="settings_doh">DNS поверх HTTPS</string>
-    <string name="settings_doh_desc">Обход DNS-спуфинга в некоторых странах</string>
-    <string name="settings_reboot_protection">Защита от перезагрузки</string>
-    <string name="settings_reboot_protection_desc">Если включено, вам нужно будет подтверждать каждую перезагрузку</string>
-    <string name="settings_blacklist">Черный список</string>
-    <string name="settings_blacklist_desc">Список модулей, которые могут иметь закрытый код или считаться опасными</string>
-    <string name="settings_date_pattern">Формат даты</string>
-    <string name="settings_date_pattern_desc">Используйте свой собственный формат даты</string>
-    <string name="settings_updates">Обновления</string>
-    <string name="settings_updates_desc">Управляйте своими предпочтениями над процессом обновления</string>
-    <string name="settings_homepage">Домашняя страница приложения</string>
-    <string name="settings_homepage_desc">Выберите начальный экран приложения</string>
-    <string name="settings_auto_update_repos">Автоматическое обновление репозиториев</string>
-    <string name="settings_auto_update_repos_desc">Автоматически обновлять репозитории в фоновом режиме</string>
-    <string name="settings_repo_update_interval">Интервал обновления репозиториев</string>
-    <string name="settings_repo_update_interval_desc">Выберите интервал времени для обновления репозиториев</string>
-    <string name="settings_check_modules_update">Проверять наличие обновлений модулей</string>
-    <string name="settings_check_modules_update_desc">Включает проверку обновлений для установленных модулей</string>
-    <string name="settings_check_modules_update_interval">Интервал проверки обновлений модулей</string>
-    <string name="settings_check_modules_update_interval_desc">Выберите интервал времени для проверки установленных модулей</string>
-    <!-- App Theme -->
-    <string name="app_theme_palette">Палитра темы</string>
-    <string name="app_theme_dark_theme">Темная тема</string>
-    <string name="app_theme_dark_theme_auto">Авто</string>
-    <string name="app_theme_dark_theme_light">Светлая</string>
-    <string name="app_theme_dark_theme_dark">Темная</string>
-    <!-- Repo -->
-    <string name="repo_modules">%d модулей</string>
-    <string name="repo_update_at">Обновлено: %s</string>
-    <string name="repo_incompatible">Несовместимо</string>
-    <string name="repo_options">Опции</string>
-    <string name="repo_options_update">Обновить</string>
-    <string name="repo_options_delete">Удалить</string>
-    <string name="repo_options_support">Поддержка</string>
-    <string name="repo_options_submission">Предложения</string>
-    <string name="repo_options_website">Веб-сайт</string>
-    <string name="repo_options_donate">Пожертвовать</string>
-    <string name="repo_delete_dialog_desc">Вы уверены, что хотите удалить %s?</string>
-    <string name="repo_add_dialog_title">Добавить репозиторий</string>
-    <string name="repo_add_dialog_add">Добавить</string>
-    <!-- About -->
-    <string name="about_app_version">Версия %1$s (%2$s)</string>
-    <string name="about_desc1">Предоставляет репозитории модулей и управляет модулями для Magisk и KernelSU.</string>
-    <string name="about_desc2">Сделано с ❤️ от %s</string>
-    <!-- Dialog -->
-    <string name="dialog_attention">Внимание</string>
-    <string name="dialog_cancel">Отмена</string>
-    <string name="dialog_ok">OK</string>
-    <!-- Menu -->
-    <string name="menu_advanced_menu">Расширенное меню</string>
-    <string name="menu_sort_mode">Режим сортировки</string>
-    <string name="menu_sort_option_name">Имя</string>
-    <string name="menu_sort_option_updated">Время обновления</string>
-    <string name="menu_descending">По убыванию</string>
-    <string name="menu_pin_enabled">Закрепить включённые</string>
-    <string name="menu_show_updated">Показывать время обновления</string>
-    <string name="menu_show_antifeatures">Показывать анти-функции</string>
-    <!-- Message -->
-    <string name="message_download_success">Загрузка завершена</string>
-    <string name="message_loading">Загрузка…</string>
-    <!-- Notification -->
-    <string name="notification_name_download">Служба загрузки</string>
-    <!-- Search -->
-    <string name="search_empty">Пустой список</string>
-    <string name="search_placeholder">Поиск…</string>
-    <!-- Other -->
-    <string name="unknown_error">Неизвестная ошибка</string>
-    <string name="we_hit_a_brick_crash">Мы наткнулись на препятствие!</string>
-    <string name="report_to_issues">Сообщить о проблеме</string>
-    <string name="stack_trace_truncated">%s\n… еще %d</string>
-    <string name="additional_notes">Дополнительные примечания</string>
-    <string name="repo_added">Репозиторий добавлен</string>
-    <!-- Repo Update Service -->
-    <string name="repo_update_service">Репозитории успешно обновлены</string>
-    <string name="repo_update_service_desc">Не волнуйтесь, MMRL обновил ваши установленные репозитории. 😋</string>
-    <string name="repo_update_service_failed">Обновлений для репозиториев не найдено</string>
-    <string name="repo_update_service_failed_desc">Нет обновлений для репозиториев</string>
-    <string name="has_a_new_update">Для %1$s доступно обновление!</string>
-    <string name="update_available_from_to">Доступно обновление с %s (%d) до %s (%d).</string>
-    <string name="events_birthday">%1$s лет MMRL!</string>
-    <string name="events_halloween">БУ! … АХ</string>
-    <string name="events_christmas">← Ёлка.</string>
-    <string name="events_new_years_eve">Канун Нового года!</string>
-    <string name="open_source">Открытый исходный код</string>
-    <string name="view_module_features_action_sub">Позволяет пользователю выполнять скрипт одним нажатием кнопки</string>
-    <string name="settings_developer">Разработчик</string>
-    <string name="view_module_low_root_version_desc">Похоже, у вас старая версия менеджера Root прав. Проверьте, есть ли обновления и установите их.</string>
-    <string name="view_module_unsupported_arch_desc">Похоже, ваше устройство не поддерживает требуемую архитектуру процессора, заявленную разработчиком.</string>
-    <string name="settings_open_notification_settings">Открыть настройки уведомлений</string>
-    <string name="settings_developer_desc">Инструменты отладки для разработчиков</string>
-    <string name="home_support_content">MMRL есть и всегда будет бесплатным и с открытым исходным кодом. Однако вы можете показать мне, что вам не все равно, сделав пожертвование.</string>
-    <string name="manager_version">Версия менеджера</string>
-    <string name="settings_security_allow_advanced_kernelsu_api">Разрешить расширенное API KernelSU</string>
-    <string name="menu_show_modules_count">Показать количество модулей</string>
-    <string name="selinux_status">Статус SELinux</string>
-    <string name="selinux_status_disabled">Выключен</string>
-    <string name="selinux_status_enforcing">Принудительный</string>
-    <string name="reboot_userspace">Мягкая перезагрузка</string>
-    <string name="reboot_recovery">Перезагрузка в режим восстановления</string>
-    <string name="kernel">Ядро</string>
-    <string name="fingerprint">Отпечаток</string>
-    <string name="selinux_status_unknown">Неизвестно</string>
-    <string name="selinux_status_permissive">Разрешительный</string>
-    <string name="reboot">Перезагрузка</string>
-    <string name="pre_release">Пред-релиз</string>
-    <string name="unsafe_url_redirecting">НебезопасныйURL: %1$s. Перенаправление…</string>
+    <string name="view_module_features_boot_completed">Завершение загрузки</string>
+    <string name="view_module_features_service_sub">Выполнение кода после полной загрузки системв.</string>
+    <string name="view_module_features_post_fs_data_sub">Выполнение кода до полной загрузки системы.</string>
+    <string name="view_module_features_resetprop_sub">Установка системных свойств через Magisk resetprop.</string>
+    <string name="view_module_features_sepolicy_sub">Добавление политик безопасности SELinux.</string>
+    <string name="view_module_features_zygisk_sub">Интеграция с Zygisk для системных изменений.</string>
+    <string name="view_module_features_apks_sub">Включает дополнительные APK-файлы.</string>
+    <string name="view_module_features_webui_sub">Веб-интерфейс управления модулем. Требует подтверждения использования JavaScript.</string>
+    <string name="view_module_features_action_sub">Исполнение скрипта по нажатию кнопки</string>
+    <string name="view_module_features_postmount_sub">Выполнение после монтирования OverlayFS</string>
+    <string name="view_module_features_bootcompleted_sub">Выполнение после полной загрузки системы</string>
     <string name="view_module_module_support">Поддержка модуля</string>
-    <string name="view_module_provided_by">Предоставил</string>
-    <string name="view_module_added_on">Добавлен</string>
+    <string name="view_module_provided_by">Предоставлено</string>
+    <string name="view_module_added_on">Добавлено</string>
     <string name="view_module_about_this_module">О модуле</string>
-    <string name="view_module_donate">Пожертвовать</string>
-    <string name="view_module_donate_desc">Проявите немного любви к разработчику этого модуля, пожертвовав ему на кофе! ☕</string>
+    <string name="view_module_section_count">%1$s+</string>
+    <string name="view_module_donate">Поддержать</string>
+    <string name="view_module_donate_desc">Поддержите разработчика модуля материально ☕</string>
     <string name="view_module_module_id">ID модуля</string>
-    <string name="view_module_install_confirm_confirm">Установить</string>
-    <string name="view_module_required_root_version">Требуемая версия root</string>
-    <string name="view_module_unsupported_device">Неподдерживаемое устройство</string>
-    <string name="view_module_unsupported_arch">Неподдерживаемая архитектура</string>
-    <string name="view_module_unsupported_device_desc">Похоже, ваши устройства не поддерживаются этими модулями или были исключены.</string>
-    <string name="module_reinstall">Переустановить</string>
-    <string name="settings_check_app_updates">Проверять на наличие обновлений</string>
-    <string name="settings_modules">Модули и установка</string>
-    <string name="reboot_download">Перезагрузка в режим загрузки</string>
-    <string name="reboot_edl">Перезагрузка в EDL</string>
-    <string name="home_support_title">Поддержать меня</string>
-    <string name="working_mode_magisk_title">Magisk</string>
-    <string name="working_mode_kernelsu_title">KernelSU</string>
-    <string name="working_mode_kernelsu_next_title">KernelSU Next</string>
-    <string name="working_mode_apatch_title">APatch</string>
     <string name="view_module_required_os">Требуемая ОС</string>
     <string name="view_module_required_os_value">Android %1$s и выше</string>
     <string name="view_module_dependencies">Зависимости</string>
     <string name="view_module_share">Поделиться</string>
-    <string name="view_module_install_confirm_title">Установить этот модуль?</string>
-    <string name="view_module_install_confirm_confirm_deps">Установить (зав.)</string>
+    <string name="view_module_install_confirm_title">Установить модуль?</string>
+    <string name="view_module_install_confirm_confirm_deps">Установить (зависимости)</string>
+    <string name="view_module_install_confirm_confirm">Установить</string>
     <string name="view_module_install_confirm_desc"><![CDATA[Вы уверены, что хотите установить <font color=\"%1$s\">%2$s</font>?]]></string>
-    <string name="view_module_low_root_version">Версия Root ниже требуемой!</string>
-    <string name="settings_modules_handlers">Обработчики</string>
-    <string name="settings_modules_installer">Установщик</string>
-    <string name="menu_export_modules_as_text">Экспорт модулей в текстовый файл</string>
-    <string name="reboot_bootloader">Перезагрузка в загрузчик</string>
+    <string name="view_module_install_confirm_desc_deps"><![CDATA[Вы уверены, что хотите установить <font color=\"%1$s\">%2$s</font>? Также будут установлены:]]></string>
+    <string name="view_module_low_root_version">Низкая версия root-системы!</string>
+    <string name="view_module_low_root_version_desc">У вас устаревшая версия root-системы. Обновите её.</string>
+    <string name="view_module_required_root_version">Требуемая версия root</string>
+    <string name="view_module_unsupported_device">Неподдерживаемое устройство</string>
+    <string name="view_module_unsupported_arch">Неподдерживаемая архитектура</string>
+    <string name="view_module_unsupported_arch_desc">Ваше устройство не поддерживает архитектуру, указанную разработчиком.</string>
+    <string name="view_module_unsupported_device_desc">Устройство не поддерживается этим модулем.</string>
+    <!-- Модули -->
+    <string name="modules_empty">Модулей не найдено</string>
+    <!-- Элемент модуля -->
+    <string name="module_version_author">%1$s от %2$s</string>
+    <string name="module_remove">Удалить</string>
+    <string name="module_restore">Восстановить</string>
+    <string name="module_install">Установить</string>
+    <string name="module_reinstall">Переустановить</string>
+    <string name="module_download">Загрузить</string>
+    <string name="module_update">Обновить</string>
+    <!-- Настройки -->
+    <string name="settings_app">Приложение</string>
+    <string name="settings_about">О программе</string>
+    <string name="settings_resources">Ресурсы</string>
+    <string name="settings_resources_desc">Документация, поддерживаемые репозитории и прочее</string>
+    <string name="settings_security">Безопасность</string>
+    <string name="settings_security_desc">Настройки безопасности</string>
+    <string name="settings_appearance">Внешний вид</string>
+    <string name="settings_appearance_desc">Изменение оформления</string>
+    <string name="settings_other">Дополнительно</string>
+    <string name="settings_other_desc">DNS-over-HTTPS, путь загрузки и т.д.</string>
+    <string name="settings_text_wrap">Перенос текста</string>
+    <string name="settings_text_wrap_desc">Включить перенос в окне установки</string>
+    <string name="settings_changelog">История изменений</string>
+    <string name="settings_changelo_desc">Все изменения MMRL</string>
+    <string name="settings_open_notification_settings">Настройки уведомлений</string>
+    <!-- Root -->
+    <string name="settings_root_access">Root-доступ: %s</string>
+    <string name="settings_root_provider">Провайдер: %s</string>
     <string name="settings_root_version">Версия: %s</string>
-    <string name="settings_check_app_updates_desc">Автоматически проверяет наличие обновлений каждый раз, когда вы открываете приложение</string>
-    <string name="settings_hide_fingerprint">Скрыть отпечаток на главной странице</string>
-    <string name="settings_security_allow_filesystem_api">Разрешить API файловой системы</string>
-    <string name="action_executing">Выполнение…</string>
-    <string name="hidden">Скрыто</string>
-    <string name="install_screen_cancel_title">Отменить установку?</string>
-    <string name="install_screen_cancel_text">Вы уверены, что хотите отменить установку?</string>
-    <string name="learn_more">Узнать больше</string>
-    <string name="sponsors">Спонсоры</string>
-    <string name="page_home">Главная</string>
-    <string name="view_module_license">Лицензия</string>
-    <string name="view_module_install_confirm_desc_deps"><![CDATA[Вы уверены, что хотите установить <font color=\"%1$s\">%2$s</font>? Этот модуль также требует:]]></string>
-    <string name="settings_hide_fingerprint_desc">Неважно, настоящий он или поддельный</string>
-    <string name="settings_include_preleases">Включить предварительные релизы</string>
+    <string name="settings_root_granted">Разрешён</string>
+    <string name="settings_root_not_available">Недоступен</string>
+    <string name="settings_root_none">Отсутствует</string>
+    <!-- Без root -->
+    <string name="settings_non_root_desc">Ограниченная функциональность</string>
+    <!-- Настройки приложения -->
+    <string name="settings_app_theme">Тема</string>
+    <string name="settings_app_theme_desc">Смена цветовой схемы и темы</string>
+    <string name="settings_download_path">Путь загрузки</string>
+    <string name="settings_delete_zip">Удалить ZIP</string>
+    <string name="settings_delete_zip_desc">Удалить ZIP-файл после установки</string>
+    <string name="settings_doh">DNS-over-HTTPS</string>
+    <string name="settings_doh_desc">Обход блокировок DNS</string>
+    <string name="settings_reboot_protection">Защита от перезагрузки</string>
+    <string name="settings_reboot_protection_desc">Требовать подтверждение перезагрузки</string>
+    <string name="settings_blacklist">Чёрный список</string>
+    <string name="settings_blacklist_desc">Опасные модули</string>
+    <string name="settings_date_pattern">Формат даты</string>
+    <string name="settings_date_pattern_desc">Настройка формата даты</string>
+    <string name="settings_updates">Обновления</string>
+    <string name="settings_updates_desc">Настройки проверки обновлений</string>
+    <string name="settings_homepage">Стартовая страница</string>
+    <string name="settings_homepage_desc">Выбор начального экрана</string>
+    <string name="settings_auto_update_repos">Автообновление репозиториев</string>
+    <string name="settings_auto_update_repos_desc">Автоматическое обновление в фоне</string>
+    <string name="settings_repo_update_interval">Интервал обновления</string>
+    <string name="settings_repo_update_interval_desc">Периодичность проверки репозиториев</string>
+    <string name="settings_check_app_updates">Проверять обновления</string>
+    <string name="settings_check_app_updates_desc">Автоматическая проверка обновлений</string>
+    <string name="settings_hide_fingerprint">Скрыть дату сборки</string>
+    <string name="settings_hide_fingerprint_desc">Скрывать информацию о сборке</string>
+    <string name="settings_check_modules_update">Проверять модули</string>
+    <string name="settings_check_modules_update_desc">Проверять обновления модулей</string>
+    <string name="settings_check_modules_update_interval">Интервал проверки</string>
+    <string name="settings_check_modules_update_interval_desc">Периодичность проверки модулей</string>
+    <string name="settings_include_preleases">Включать бета-версии</string>
     <string name="settings_developer_mode">Режим разработчика</string>
-    <string name="settings_developer_mode_desc">Показывает ID модулей и многое другое</string>
+    <string name="settings_developer_mode_desc">Дополнительные функции для разработки</string>
     <string name="settings_privacy_policy">Политика конфиденциальности</string>
-    <string name="settings_clear_install_terminal">Очищать Терминал</string>
-    <string name="settings_clear_install_terminal_desc">Чистит терминал при установке более одного модуля</string>
-    <string name="home_installed_modules">Установленные модули</string>
-    <string name="home_enabled_modules">Включенные модули</string>
-    <string name="home_disabled_modules">Отключенные модули</string>
-    <string name="home_updated_modules">Обновленные модули</string>
+    <string name="settings_clear_install_terminal">Очистить журнал</string>
+    <string name="settings_clear_install_terminal_desc">Очищать журнал при установке</string>
+    <string name="settings_shell_module_state_change">Использовать Shell</string>
+    <string name="settings_shell_module_state_change_desc">Использовать Shell для управления состоянием модулей</string>
+    <string name="settings_modules">Модули</string>
+    <string name="settings_modules_desc">Настройки обработки модулей</string>
+    <string name="settings_security_allow_advanced_kernelsu_api">Разрешить расширенный API KernelSU</string>
+    <string name="settings_security_allow_filesystem_api">Разрешить API файловой системы</string>
+    <string name="settings_developer">Разработка</string>
+    <string name="settings_developer_desc">Инструменты для отладки</string>
+    <string name="settings_webui_remote_url">Удалённый URL</string>
+    <string name="settings_webui_remote_url_desc">Для отладки укажите локальный домен (например, http://localhost)</string>
+    <string name="settings_webui_remote_url_alert_desc">Использование сторонних URL может представлять риск. Используйте только для отладки.</string>
+    <!-- Тема -->
+    <string name="app_theme_palette">Цветовая схема</string>
+    <string name="app_theme_dark_theme">Тёмная тема</string>
+    <string name="app_theme_dark_theme_auto">Автоматическая</string>
+    <string name="app_theme_dark_theme_light">Светлая</string>
+        <string name="app_theme_dark_theme_dark">Тёмная</string>
+    <!-- Репозитории -->
+    <string name="repo_modules">%d модулей</string>
+    <string name="repo_update_at">Обновлено: %s</string>
+    <string name="repo_incompatible">Неподдерживаемо</string>
+    <string name="repo_options">Опции</string>
+    <string name="repo_options_update">Обновить</string>
+    <string name="repo_options_delete">Удалить</string>
+    <string name="repo_options_support">Поддержка</string>
+    <string name="repo_options_submission">Отправить модуль</string>
+    <string name="repo_options_website">Сайт</string>
+    <string name="repo_options_donate">Поддержать</string>
+    <string name="repo_delete_dialog_desc">Удалить репозиторий %s?</string>
+    <string name="repo_add_dialog_title">Добавить репозиторий</string>
+    <string name="repo_add_dialog_add">Добавить</string>
+    <!-- О программе -->
+    <string name="about_app_version">Версия %1$s (%2$s)</string>
+    <string name="about_desc1">Управление модулями для Magisk и KernelSU.</string>
+    <string name="about_desc2">Создано с ❤️ %s</string>
+    <!-- Диалоги -->
+    <string name="dialog_attention">Внимание</string>
+    <string name="dialog_cancel">Отмена</string>
+    <string name="dialog_ok">ОК</string>
+    <!-- Меню -->
+    <string name="menu_advanced_menu">Расширенные настройки</string>
+    <string name="menu_sort_mode">Сортировка</string>
+    <string name="menu_sort_option_name">По названию</string>
+    <string name="menu_sort_option_updated">По дате</string>
+    <string name="menu_descending">По убыванию</string>
+    <string name="menu_pin_enabled">Закрепление</string>
+    <string name="menu_pin_action">Закрепить действие</string>
+    <string name="menu_pin_webui">Закрепить веб-интерфейс</string>
+    <string name="menu_show_updated">Показывать дату</string>
+    <string name="menu_show_antifeatures">Показывать анти-функции</string>
+    <string name="menu_export_modules_as_text">Экспорт модулей</string>
+    <!-- Уведомления -->
+    <string name="notification_name_download">Загрузка</string>
+    <!-- Поиск -->
+    <string name="search_empty">Список пуст</string>
+    <string name="search_placeholder">Поиск...</string>
+    <!-- Прочее -->
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="help">Помощь</string>
+    <string name="we_hit_a_brick_crash">Ошибка приложения</string>
+    <string name="report_to_issues">Сообщить разработчикам</string>
+    <string name="stack_trace_truncated">%s
+… %d более</string>
+    <string name="additional_notes">Дополнительно</string>
+    <string name="repo_added">Репозиторий добавлен</string>
+    <!-- SELinux -->
+    <string name="selinux_status">Статус SELinux</string>
+    <string name="selinux_status_disabled">Отключён</string>
+    <string name="selinux_status_enforcing">В режиме enforcement</string>
+    <string name="selinux_status_permissive">В режиме permissive</string>
+    <string name="selinux_status_unknown">Неизвестно</string>
+    <string name="reboot">Перезагрузка</string>
+    <string name="reboot_userspace">Мягкая перезагрузка</string>
+    <string name="reboot_recovery">В recovery</string>
+    <string name="reboot_bootloader">В загрузчик</string>
+    <string name="reboot_download">В режим загрузки</string>
+    <string name="reboot_edl">В EDL</string>
+    <!-- Главная страница -->
+    <string name="home_support_title">Поддержать проект</string>
+    <string name="home_support_content">MMRL — бесплатное open-source приложение. Поддержите разработчика.</string>
+    <string name="home_installed_modules">Установлено модулей</string>
+    <string name="home_enabled_modules">Включено</string>
+    <string name="home_disabled_modules">Отключено</string>
+    <string name="home_updated_modules">Обновлено</string>
+    <string name="home_storage_usage">Использование</string>
+    <string name="home_root_provider_version_name">Версия root-системы</string>
+    <string name="home_root_provider_se_linux_context">Контекст SELinux</string>
+    <!-- Остальные строки -->
     <string name="bulk_install_module_already_added">Модуль уже добавлен</string>
     <string name="bulk_install_module_added">Модуль добавлен</string>
-    <string name="page_repositorys">Репозитории</string>
-    <string name="blacklisted_desc">Этот модуль был занесен в черный список MMRL. Установка отключена для обеспечения вашей безопасности. Если вы все еще хотите установить этот модуль, вы можете отключить оповещения о черном списке в настройках, перейдя в **Настройки → Безопасность → Предупреждения о черном списке**.\n@more(Узнать подробнее)</string>
-    <string name="blacklisted">В черном списке</string>
-    <string name="settings_blacklist_alerts">Предупреждения о черном списке</string>
-    <string name="view_module_features_action">Действие</string>
-    <string name="view_module_section_count">%1$s+</string>
-    <string name="settings_modules_permissions">Модули и Разрешения</string>
-    <string name="settings_modules_permissions_desc">Разрешить JavaScript API и многое другое для локальных модулей</string>
-    <string name="working_mode_kernelsu_desc">Рут-решение на основе ядра, предлагающее расширенный контроль над пользовательскими приложениями, настраиваемые права суперпользователя и поддержку системных модулей с использованием OverlayFS.</string>
-    <string name="working_mode_apatch_desc">Патчинг ядра и системы Android. Новое рут-решение на основе ядра с поддержкой модулей (как в Magisk) и внедрением функций в ядро (требуется inline-hook и syscall-table-hook). Основано и модифицировано из KernelSU.</string>
-    <string name="working_mode_kernelsu_next_desc">Продвинутое рут-решение на основе ядра с поддержкой Magic Mount, расширенным контролем над пользовательскими приложениями и настраиваемыми правами суперпользователя.</string>
-    <string name="working_mode_magisk_desc">Набор инструментов для настройки Android, предоставляющий root-доступ, поддержку модулей, модификацию загрузочного образа и выполнение кода на уровне процессов с помощью Zygisk.</string>
-    <string name="settings_shell_module_state_change_desc">Использует shell вместо создания файлов в директории модуля. После включения вы не сможете использовать кнопку восстановления из-за ограничений.</string>
-    <string name="settings_shell_module_state_change">Использовать Shell для состояний</string>
-    <string name="working_mode_shizuku_title">Shizuku</string>
-    <string name="settings_webui_remote_url">WebUI Remote URL</string>
+    <string name="bulk_module_install">Массовая установка</string>
+    <string name="bulk_add_as_bulk">Добавить в очередь</string>
+    <string name="action_activity">Действие</string>
+    <string name="action_failure">Ошибка</string>
+    <string name="action_executing">Выполнение...</string>
+    <string name="has_a_new_update">%1$s имеет обновление!</string>
+    <string name="update_available_from_to">Доступно обновление с %s (%d) до %s (%d).</string>
+    <string name="events_birthday">%1$s лет MMRL!</string>
+    <string name="events_halloween">BOO! … AHH</string>
+    <string name="events_christmas">← Елка.</string>
+    <string name="events_new_years_eve">Новогодняя ночь!</string>
+    <string name="open_source">Источник кода</string>
+    <string name="kernel">Ядро</string>
+    <string name="manager_version">Версия менеджера</string>
+    <string name="fingerprint">Дата сборки</string>
+    <string name="view_module_features_mmrl_webui">MMRL WebUI</string>
+    <string name="view_module_features_mmrl_webui_sub">Этот модуль использует уникальный для MMRL веб-интерфейс.</string>
+    <string name="view_module_features_mmrl_webui_config">Конфигурация MMRL WebUI</string>
+    <string name="view_module_features_mmrl_webui_config_sub">Этот модуль использует конфигурационный файл для веб-интерфейса MMRL</string>
+    <string name="view_module_features_filesystem">API файловой системы</string>
+    <string name="view_module_features_filesystem_sub">Этот модуль использует API файловой системы MMRL.</string>
+    <string name="view_module_features_eruda">Консоль Eruda</string>
+    <string name="view_module_features_eruda_sub">В модуле включена переключаемая отладочная консоль.</string>
+    <string name="view_module_features_dex_loader">Плагины WebUI</string>
+    <string name="view_module_features_dex_loader_sub">Модуль поддерживает плагины WebUI для добавления новых API JavaScript.</string>
+    <string name="provider_service_not_active">Сервис провайдера не активен</string>
+    <string name="title_or_icon_not_found">Не найден заголовок или иконка</string>
+    <string name="icon_not_found">Иконка не найдена</string>
+    <string name="shortcut_already_exists">Ярлык уже существует</string>
+    <string name="missing_mod_id">Не указан ID модуля</string>
+    <string name="are_you_sure_you_want_to_exit">Вы действительно хотите выйти?</string>
+    <string name="exit">Выход</string>
+    <string name="says">%1$s говорит</string>
+    <string name="shortcut_not_supported">Ярлыки не поддерживаются вашим устройством или лаунчером</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="select_your_platform">Выберите платформу</string>
+    <string name="continue_with">Продолжить с %1$s</string>
+    <string name="select">Выбрать</string>
+    <string name="setup_root_note">Для доступа ко всем функциям MMRL требуется rooted-устройство. MMRL не предоставляет инструкции по rooting и не несёт ответственности за возможные повреждения при rooting или использовании приложения.</string>
+    <string name="platform">Платформа</string>
+    <string name="change_platform">Сменить платформу</string>
+    <string name="page_search">Поиск</string>
+    <string name="from_other_repositories">Из других репозиториев</string>
+    <string name="drawer_legal">Юридическая информация</string>
+    <string name="drawer_tools">Инструменты</string>
+    <string name="drawer_support">Поддержка</string>
+    <string name="drawer_general">Общие</string>
 </resources>
